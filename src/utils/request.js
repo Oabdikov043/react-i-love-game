@@ -24,5 +24,9 @@ export default async function request(path = "/", method = 'GET', data = null) {
         const error = await response.json();
         throw new Error(error.message);
     }
+
+    if (response.status === 204) {
+        return null;
+    }
     return response.json();
 }
