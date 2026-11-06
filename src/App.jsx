@@ -2,6 +2,7 @@ import Header from "./components/header/Header"
 import Home from "./components/home/Home"
 import Footer from "./components/footer/Footer"
 import Catalog from "./components/catalog/Catalog"
+import GameDetails from "./components/game-details/GameDetails"
 import {Route, Routes} from 'react-router'
 
 
@@ -19,9 +20,10 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/catalog" element={<Catalog />} />
+        <Route path="/games/:gameId" element={<GameDetails />} />
       </Routes>
 
-      
+
       <Footer />
 </>
 
