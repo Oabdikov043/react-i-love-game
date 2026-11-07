@@ -1,5 +1,5 @@
 const url = "https://wlqrtliqvqwzbldggfxp.supabase.co/rest/v1/";
-const apiKey ="sb_publishable_vN0GjeSLhADK1I8vL2yYpg_W9750H5A";
+const apiKey =import.meta.env.VITE_API_KEY;
 
 
 export default async function request(path = "/", method = 'GET', data = null) {
